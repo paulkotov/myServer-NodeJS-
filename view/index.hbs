@@ -1,0 +1,11 @@
+<h2>Авторизация: nodejs, express и passportjs</h2>
+
+{{#if user}}
+    <div class="user-data">
+        <span>Имя: {{user.username}}</span>
+    </div>
+{{/if}}
+{{#elseif}}
+    <p>Вы не авторизованы!</p>
+    <a href="/auth">Авторизоваться</a>
+{{/elseif}}
