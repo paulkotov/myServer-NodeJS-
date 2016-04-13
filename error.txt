@@ -1,0 +1,23 @@
+
+C:\xampp\htdocs\Myserver>node app.js
+C:\xampp\htdocs\Myserver\node_modules\express\lib\express.js:99
+      throw new Error('Most middleware (like ' + name + ') is no longer bundled
+with Express and must be installed separately. Please see https://github.com/sen
+chalabs/connect#middleware.');
+      ^
+
+Error: Most middleware (like logger) is no longer bundled with Express and must
+be installed separately. Please see https://github.com/senchalabs/connect#middle
+ware.
+    at Function.Object.defineProperty.get (C:\xampp\htdocs\Myserver\node_modules
+\express\lib\express.js:99:13)
+    at module.exports (C:\xampp\htdocs\Myserver\boot\express.js:26:20)
+    at module.exports (C:\xampp\htdocs\Myserver\boot\index.js:2:25)
+    at Object.<anonymous> (C:\xampp\htdocs\Myserver\app.js:11:24)
+    at Module._compile (module.js:413:34)
+    at Object.Module._extensions..js (module.js:422:10)
+    at Module.load (module.js:357:32)
+    at Function.Module._load (module.js:314:12)
+    at Function.Module.runMain (module.js:447:10)
+    at startup (node.js:142:18)
+    at node.js:939:3
