@@ -1,6 +1,14 @@
 var passport = require('passport');
 
 module.exports = function (app) {
+    const mustBeAuthentificated = (res, req, next) => {
+        if(req.isAuthentificated()){
+            next();
+        }
+        else {
+            res.redirect("/auth");
+        }
+    }
 
     app.get('/auth', function (req, res) {
 
