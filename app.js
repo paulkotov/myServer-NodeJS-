@@ -14,7 +14,7 @@ require('./boot/index')(app);
 require('./routes/index')(app);
 
 //mysql
-require('./mysql/mysql')(app);
+require('./db/db.js')(app);
 
 http.createServer(app).listen(app.get('port'), function () {
     if ('development' == app.get('env')) {
